@@ -12,7 +12,10 @@ namespace TextParserTask
             var list = tp.SomeMeth();
             foreach (var item in list)
             {
-                Console.WriteLine(item);
+                foreach (var si in item.SentenceItems)
+                {
+                    Console.WriteLine(si.Value);
+                }
             }
             Console.ReadKey();
         }
