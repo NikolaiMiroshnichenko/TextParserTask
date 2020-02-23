@@ -6,6 +6,6 @@ namespace TextParsering.Interface
 {
     public interface ISentenceItem
     {
-        string Value { get; } 
+        string Value { get; set; } 
     }
 }

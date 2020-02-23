@@ -7,6 +7,6 @@ namespace TextParsering.Classes
 {
     public class PunctuationMark: ISentenceItem
     {
-        public string Value { get; }
+        public string Value { get; set; }
     }
 }

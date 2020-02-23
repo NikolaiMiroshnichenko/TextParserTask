@@ -1,4 +1,6 @@
 ﻿using System;
+using TextParsering.Classes;
+using TextParsering.Interface;
 
 namespace TextParserTask
 {
@@ -6,7 +8,13 @@ namespace TextParserTask
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TextParser tp = new TextParser();
+            var list = tp.SomeMeth();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadKey();
         }
     }
 }

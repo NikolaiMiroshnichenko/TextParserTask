@@ -7,6 +7,6 @@ namespace TextParsering.Classes
 {
     public class Digit: ISentenceItem
     {
-        public string Value { get; }
+        public string Value { get; set; }
     }
 }
